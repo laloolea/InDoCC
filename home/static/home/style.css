@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    background: rgb(86, 214, 129);
+    padding: 10px 10px 10px 30px;
+    color: white;
+    border-radius: 1px;
+    box-shadow: 2px 2px 4px #575555;
+}
+
+.login {
+    margin: auto;
+    margin-top: 10%;
+    width: 30%;
+    box-shadow: 2px 2px 4px #575555;
+    padding: 18px;
+    border-radius: 1px;
+}
+
+.login input {
+    margin: auto;
+    width: 100%;
+}
+
+.login_submit {
+    height: 40px;
+    background: rgb(219, 219, 219);
+    border-radius: 2px;
+}
+
+.login div {
+    margin: 0px 14px 14px 0px;
+}
+
+.login h3 {
+    position: relative;
+    width: 50%;
+    height: 10%;
+    margin: auto;
+    width: 50%;
+    height: 50px;
+}
+
+.text_field {
+    height: 20px;
+}
+
+.error {
+    color: red;
+}

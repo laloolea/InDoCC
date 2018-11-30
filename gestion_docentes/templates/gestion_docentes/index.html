@@ -1,0 +1,46 @@
+{% extends 'home/logged_in_base.html' %}
+
+{% block title %}
+    InDoCC - Docentes
+{% endblock %}
+
+{% block content %}
+    <h1>Gestion de docentes</h1>
+    
+    {% if docentes %}
+        <p>Docentes:</p>
+        <table class="user_table" style="width:35%">
+            {% for docente in docentes %}
+                <tr>
+                    <td>{{ docente }}</td>
+                    <td><a href="{% url 'gestion_docentes:detail' docente.username %}">modificar</a></td>
+                    <td><a href="#" onclick="deleteUser('{{ docente.username }}')" class="eliminar">eliminar</a></td>
+                </tr>
+            {% endfor %}
+            </table>
+    {% else %}
+        <p>No hay docentes registrados en el sistema</p>
+    {% endif %}
+
+    <a href="{% url 'gestion_docentes:registro' %}">Agregar docente</a>
+
+    <form action="{% url 'gestion_docentes:index' %}" method="POST" id="hidden_form_to_delete">
+        {% csrf_token %}
+        <input type="hidden" name="user_to_delete" id="user_to_delete">
+    </form>
+
+    <script>
+        function deleteUser(name) {
+            var confirmation = confirm("¿Esta seguro que desea eliminar al usuario " + name + "?");
+            
+            if(confirmation) {
+                user_to_delete = document.getElementById("user_to_delete");
+                user_to_delete.value = name;
+                form = document.getElementById("hidden_form_to_delete");
+                form.submit();
+            }
+        }
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'home/logged_in_base.html' %}
+
+{% block title %}
+    InDoCC
+{% endblock %}
+
+{% block content %}
+    {% load generic_filters %}
+
+    {% if request.user|has_group:"Admin" %}
+        <a href="{% url 'gestion_docentes:index' %}">Gestionar docentes</a>
+    {% endif %}
+    {% if request.user|has_group:"Admin" %}
+        <a href="{% url 'gestion_promocion:promocion' %}">Gestionar promocion</a>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promocion</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.visibility = 'visible';
+            } else {
+                document.getElementById('ifYes').style.visibility = 'hidden';
+            }
+        }
+
+        function yesnoCheck2() {
+            if (document.getElementById('yesCheck2').checked) {
+                document.getElementById('ifYes2').style.visibility = 'visible';
+            } else {
+                document.getElementById('ifYes2').style.visibility = 'hidden';
+            }
+        }
+        function yesnoCheck3() {
+            if (document.getElementById('yesCheck3').checked) {
+                document.getElementById('ifYes3').style.visibility = 'visible';
+            } else {
+                document.getElementById('ifYes3').style.visibility = 'hidden';
+            }
+        }
+
+    </script>
+    <h1>PROMOCION</h1>
+    <form action="{% url 'gestion_promocion:promocion' %}" method="POST">
+        ¿Existe un proceso formal para la promoción del personal academico?
+        <input type="radio" onclick="javascript:yesnoCheck();" name="SiNo" id="yesCheck"/>Si
+        <input type="radio" onclick="javascript:yesnoCheck();" name="SiNo" id="noCheck"/>No
+        <div id="ifYes" style="visibility:hidden">
+            ¿Hay un reglamento para dicho proceso?
+            <input type="radio" onclick="javascript:yesnoCheck2();" name="SiNo2" id="yesCheck2"/>Si
+            <input type="radio" onclick="javascript:yesnoCheck2();" name="SiNo2" id="noCheck2"/>No
+            <div id="ifYes2" style="visibility:hidden">
+                Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen. <br>
+                <textarea name="comentarios" rows="10" cols="40" id = "descripcion"></textarea> <br>
+
+                 ¿Se lleva a cabo difusión de los resultados del proceso?
+                 <input type="radio" onclick="javascript:yesnoCheck3();" name="SiNo3" id="yesCheck3"/>Si
+                 <input type="radio" onclick="javascript:yesnoCheck3();" name="SiNo3" id="noCheck3"/>No
+                 <div id="ifYes3" style="visibility:hidden">
+                     Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen. <br>
+                    <textarea name="comentarios" rows="10" cols="40" id ="descripcion"></textarea> <br>
+                 </div>
+            </div>
+        </div>
+        <input type="submit" value="Submit"</>
+    </form>
+
+</body>
+</html>
+
