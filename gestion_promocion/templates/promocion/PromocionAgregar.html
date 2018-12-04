@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promocion</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.visibility = 'visible';
+            } else {
+                document.getElementById('ifYes').style.visibility = 'hidden';
+            }
+        }
+
+        function yesnoCheck2() {
+            if (document.getElementById('yesCheck2').checked) {
+                document.getElementById('ifYes2').style.visibility = 'visible';
+            } else {
+                document.getElementById('ifYes2').style.visibility = 'hidden';
+            }
+        }
+        function yesnoCheck3() {
+            if (document.getElementById('yesCheck3').checked) {
+                document.getElementById('ifYes3').style.visibility = 'visible';
+            } else {
+                document.getElementById('ifYes3').style.visibility = 'hidden';
+            }
+        }
+        function IsEmpty(){
+
+                if(document.form.question.value == "")
+                {
+                    alert("empty");
+                }
+                return;
+            }
+
+    </script>
+    <h1>PROMOCION</h1>
+    <form action="/promocion/Agregar" method="post" id ="Promocion">
+
+        <fieldset>
+            {% csrf_token %}
+
+            <label>¿Existe un proceso formal para la promoción del personal academico?</label>
+            <input type="radio" onclick="javascript:yesnoCheck();" value="true" name="{{form.Hay_proceso_promocion.name}}" id="yesCheck"  required="true"/>Si
+            <input type="radio" onclick="javascript:yesnoCheck();" value="false" name="{{form.Hay_proceso_promocion.name}}" checked="checked" id="noCheck" required="false"/>No
+            <div id="ifYes" style="visibility:hidden">
+                <label>¿Hay un reglamento para dicho proceso?</label><br</br>
+                <input type="radio" onclick="javascript:yesnoCheck2();" value="true"  name="{{form.Hay_reglamento_proceso.name}}" id="yesCheck2" required="true"/>Si
+                <input type="radio" onclick="javascript:yesnoCheck2();" value="false" name="{{form.Hay_reglamento_proceso.name}}" checked="checked" id="noCheck2" required="false"/>No
+                <div id="ifYes2" style="visibility:hidden">
+                    <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.<label> <br>
+                    <textarea type="text" name="{{form.Descripcion.name}}" onclick="IsEmpty();" required="true" ></textarea> <br>
+
+                     <label>¿Se lleva a cabo difusión de los resultados del proceso?</label>
+                     <input type="radio" onclick="javascript:yesnoCheck3();" value="true"name="{{form.Hay_difusion_proceso.name}}" id="yesCheck3" required="true"/>Si
+                     <input type="radio" onclick="javascript:yesnoCheck3();" value="false"name="{{form.Hay_difusion_proceso.name}}" checked="checked" id="noCheck3" required="false"/>No
+                     <div id="ifYes3" style="visibility:hidden">
+                         Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen. <br>
+                        <textarea type="text" name="{{form.DescripcionDifusion.name}}" onclick="IsEmpty();"   required="true"> </textarea> <br>
+                     </div>
+                </div>
+            </div>
+
+        </fieldset>
+        <button type="submit" name="Enviar">Enviar</button>
+    </form>
+
+</body>
+</html>
+

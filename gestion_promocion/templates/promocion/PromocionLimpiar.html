@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promocion</title>
+</head>
+<body>
+
+    <h1>Limpiar PROMOCION</h1>
+    <form action="" method="post" id ="Promocion">
+        {% csrf_token %}
+        <fieldset disabled id="fieldsetForm">
+
+
+             <label>¿Existe un proceso formal para la promoción del personal academico?</label>
+            {% if promocion.Hay_proceso_promocion %}
+                <input type="radio" name="{{form.Hay_proceso_promocion.name}}" value=true required="true" checked="true"> Si
+                <input type="radio" name="{{form.Hay_proceso_promocion.name}}" value=false required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_proceso_promocion.name}}" value=true required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_proceso_promocion.name}}" value=false required="true" checked="true"> No<br>
+            {% endif %}
+
+            <label>¿Hay un reglamento para dicho proceso?</label>
+            {% if promocion.Hay_reglamento_proceso %}
+                <input type="radio" name="{{form.Hay_reglamento_proceso.name}}" value=true required="true" checked="true"> Si
+                <input type="radio" name="{{form.Hay_reglamento_proceso.name}}" value=false required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_reglamento_proceso.name}}" value=true required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_reglamento_proceso.name}}" value=false required="true" checked="true"> No<br>
+            {% endif %}
+
+            <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</label> <br>
+            <textarea name="Descripcion" form="promocion">{{promocion.Descripcion}}</textarea><br>
+
+            <label>¿Se lleva a cabo difusión de los resultados del proceso?</label>
+            {% if promocion.Hay_difusion_proceso %}
+                <input type="radio" name="{{form.Hay_difusion_proceso.name}}" value=true required="true" checked="true"> Si
+                <input type="radio" name="{{form.Hay_difusion_proceso.name}}" value=false required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_difusion_proceso.name}}" value=true required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_difusion_proceso.name}}" value=false required="true" checked="true"> No<br>
+            {% endif %}
+
+             <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</label> <br>
+             <textarea name="DescripcionDifusion" form="promocion">{{promocion.DescripcionDifusion}}</textarea><br>
+
+
+        </fieldset>
+        <button type="submit" id="clean" name="_method" value="delete"> Limpiar</a></button> <br>
+        <button><a href="Agregar" > Volver</a></button>
+    </form>
+
+</body>
+</html>

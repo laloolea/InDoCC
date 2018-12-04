@@ -1,12 +1,9 @@
 from django.urls import path
+from gestion_promocion.views import PromocionAdd, PromocionViewUpdate , PromocionClean
 
-from . import views
-
-app_name = 'gestion_promocion'
 urlpatterns = [
-    path('', views.promocion, name="promocion"),
-
-    path('/editarPromocion', views.promocion_form, name="promocionForm"),
-
+    path('Agregar',PromocionAdd.as_view() , name="Agregar"),
+    path('VerEditar', PromocionViewUpdate.as_view(), name='VerEditar'),
+    path('Eliminar', PromocionClean.as_view(), name='Eliminar'),
 ]
 

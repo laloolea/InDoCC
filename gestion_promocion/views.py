@@ -2,40 +2,75 @@ from django.shortcuts import render
 from .models import Promocion
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.template import RequestContext
+from django.views.generic import TemplateView
+from gestion_promocion.forms import PromocionForm
+import gestion_promocion.models
 # Create your views here.
 
-def promocion(request):
-    p = Promocion.objects.get(pk=2)
+class PromocionAdd(TemplateView):
+    template_name = 'promocion/PromocionAgregar.html'
 
-    return render(request, 'promocion/detail.html',{"promocion":p})
+    def get(self, request, **kwargs):
+        form = PromocionForm()
+        return render(request, self.template_name, {'form': form})
 
-
-def promocion_form(request):
-    p = Promocion.objects.get(pk=2)
-    if request.method == "POST":
-
-        if request.POST["SiNo"] == "true":
-            p.Hay_proceso_promocion = True
+    def post(self, request):
+        form = PromocionForm(request.POST)
+        if form.is_valid():
+            obj = gestion_promocion.models.Promocion.objects.all().first()
+            obj.Hay_proceso_promocion = form.cleaned_data['Hay_proceso_promocion']
+            obj.Hay_reglamento_proceso = form.cleaned_data['Hay_reglamento_proceso']
+            obj.Descripcion = form.cleaned_data['Descripcion']
+            obj.Hay_difusion_proceso = form.cleaned_data['Hay_difusion_proceso']
+            obj.DescripcionDifusion = form.cleaned_data['DescripcionDifusion']
+            obj.save()
+            return render(request, 'promocion/PromocionAgregar.html', {'form': form},)
         else:
-            p.Hay_proceso_promocion = False
+            form = PromocionForm()
+        return render(request, 'PromocionAgregar.html', {'form': form})
 
-        if request.POST["SiNo2"] == "true":
-            p.Hay_reglamento_proceso = True
+
+class PromocionViewUpdate(TemplateView):
+    template_name = 'promocion/PromocionVerEditar.html'
+
+
+    def get(self, request, **kwargs):
+        form = PromocionForm(request.POST)
+        promocion = Promocion.objects.all().first()
+        return render(request, self.template_name, {'form': form, 'promocion':promocion})
+
+    def post(self, request):
+        form = PromocionForm(request.POST)
+        obj = Promocion.objects.all().first()
+        if form.is_valid():
+            obj.Hay_proceso_promocion = form.cleaned_data['Hay_proceso_promocion']
+            obj.Hay_reglamento_proceso = form.cleaned_data['Hay_reglamento_proceso']
+            obj.Descripcion = form.cleaned_data['Descripcion']
+            obj.Hay_difusion_proceso = form.cleaned_data['Hay_difusion_proceso']
+            obj.DescripcionDifusion = form.cleaned_data['DescripcionDifusion']
+            obj.save()
+            return render(request, self.template_name)
         else:
-            p.Hay_reglamento_proceso = False
+            form = PromocionForm()
+        return render(request, 'PromocionVerEditar.html', {'form': form})
 
-        p.Descripcion = request.POST["texto"]
 
-        if request.POST["SiNo3"] == "true":
-            p.Hay_difusion_proceso = True
-        else:
-            p.Hay_difusion_proceso = False
+class PromocionClean(TemplateView):
+    template_name = 'Promocion/PromocionLimpiar.html'
 
-        p.DescripcionDifusion = request.POST["texto2"]
+    def get(self, request, **kwargs):
+        form = PromocionForm(request.POST)
+        promocion = Promocion.objects.all().first()
+        return render(request, self.template_name, {'form': form, 'promocion':promocion})
 
-        p.save()
-
-        return HttpResponseRedirect(reverse('home:index'))
-
-    return render(request, 'promocion/promocion.html',{"promocion":p})
-
+    def post(self, request):
+        obj = Promocion.objects.all().first()
+        obj.Hay_proceso_promocion = False
+        obj.Hay_reglamento_proceso = False
+        obj.Descripcion = ' '
+        obj.Hay_difusion_proceso = False
+        obj.DescripcionDifusion = ' '
+        obj.save()
+        return render(request, self.template_name, {'obj': obj})
+        #return render(request, 'PromocionAgregar.html', {'form': form})
