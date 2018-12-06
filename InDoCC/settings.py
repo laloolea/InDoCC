@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'gestion_perfil_docentes.apps.GestionPerfilDocentesConfig',
     'gestion_promocion.apps.GestionPromocionConfig',
     'gestion_salarios.apps.GestionSalariosConfig',
+    'gestion_evaluacion.apps.GestionEvaluacionConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

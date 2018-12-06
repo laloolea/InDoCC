@@ -1,8 +1,5 @@
 from django.shortcuts import render
 from .models import Promocion
-from django.http import HttpResponseRedirect
-from django.urls import reverse
-from django.template import RequestContext
 from django.views.generic import TemplateView
 from gestion_promocion.forms import PromocionForm
 import gestion_promocion.models

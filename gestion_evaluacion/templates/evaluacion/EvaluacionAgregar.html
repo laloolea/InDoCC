@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluacion</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.visibility = 'visible';
+                document.getElementById('ifYes').required =true
+            } else {
+                document.getElementById('ifYes').style.visibility = 'hidden';
+                document.getElementById('ifYes').required =false
+            }
+        }
+        function yesnoCheck2() {
+            if (document.getElementById('yesCheck2').checked) {
+                document.getElementById('ifYes2').style.visibility = 'visible';
+                document.getElementById('ifYes2').required =true
+            } else {
+                document.getElementById('ifYes2').style.visibility = 'hidden';
+                document.getElementById('ifYes2').required =false
+            }
+        }
+        function yesnoCheck3() {
+            if (document.getElementById('yesCheck3').checked) {
+                document.getElementById('ifYes3').style.visibility = 'visible';
+                document.getElementById('ifYes3').required =true
+            } else {
+                document.getElementById('ifYes3').style.visibility = 'hidden';
+                document.getElementById('ifYes3').required =false
+            }
+        }
+        function yesnoCheck4() {
+            if (document.getElementById('yesCheck4').checked) {
+                document.getElementById('ifYes4').style.visibility = 'visible';
+                document.getElementById('ifYes4').required =true
+
+            } else {
+                document.getElementById('ifYes4').style.visibility = 'hidden';
+                document.getElementById('ifYes4').required =false
+            }
+        }
+        function yesnoCheck5() {
+            if (document.getElementById('yesCheck5').checked) {
+                document.getElementById('ifYes5').style.visibility = 'visible';
+                document.getElementById('ifYes5').required =true
+            } else {
+                document.getElementById('ifYes5').style.visibility = 'hidden';
+                document.getElementById('ifYes5').required =false
+            }
+        }
+        function yesnoCheck6() {
+            if (document.getElementById('yesCheck6').checked) {
+                document.getElementById('ifYes6').style.visibility = 'visible';
+                document.getElementById('ifYes6').required =true
+            } else {
+                document.getElementById('ifYes6').style.visibility = 'hidden';
+                document.getElementById('ifYes6').required =false
+            }
+        }
+
+        function yesnoCheck7() {
+            if (document.getElementById('yesCheck7').checked) {
+                document.getElementById('ifYes7').style.visibility = 'visible';
+                document.getElementById('ifYes7').required =true
+            } else {
+                document.getElementById('ifYes7').style.visibility = 'hidden';
+                document.getElementById('ifYes7').required =false
+            }
+        }
+         function yesnoCheck8() {
+            if (document.getElementById('yesCheck8').checked) {
+                document.getElementById('ifYes8').style.visibility = 'visible';
+                document.getElementById('ifYes8').required =true
+            } else {
+                document.getElementById('ifYes8').style.visibility = 'hidden';
+                document.getElementById('ifYes8').required =false
+            }
+        }
+        function IsEmpty(){
+
+                if(document.form.question.value == "")
+                {
+                    alert("empty");
+                }
+                return;
+            }
+
+    </script>
+    <h1>Evaluacion</h1>
+    <form action="/evaluacion/Agregar" method="post" id ="Evaluacion">
+
+        <fieldset>
+            {% csrf_token %}
+
+            <label>¿Los estudiantes realizan evaluaciones?</label><br>
+            <input type="radio" onclick="javascript:yesnoCheck();" value="true" name="{{form.Hay_evaluacion_estudiantes.name}}" id="yesCheck"  required="true"/>Si<br>
+            <input type="radio" onclick="javascript:yesnoCheck();" value="false" name="{{form.Hay_evaluacion_estudiantes.name}}"  id="noCheck" checked="checked" required="true"/>No
+            <div id="ifYes" style="visibility:hidden">
+                <label>Describa la manera de como se divulgan los resultados de las evaluaciones y las acciones que se toman para mejorarlas:</label><br>
+                <textarea type="text" id="descripcion" name="{{form.Descripcion_evaluacion_estudiantes.name}}" onclick="IsEmpty();" ></textarea> <br>
+                <label>¿Existen mecanismos de evaluación del desempeño docente y de investigación del profesorado?</label><br>
+                <input type="radio" onclick="javascript:yesnoCheck2();" value="true" name="{{form.Hay_mecanismos_evaluacion.name}}" id="yesCheck2"  required="true"/>Si<br>
+                <input type="radio" onclick="javascript:yesnoCheck2();" value="false" name="{{form.Hay_mecanismos_evaluacion.name}}"  id="noCheck2" checked="checked" required="true"/>No<br>
+                    <div id="ifYes2" style="visibility:hidden">
+                        <label>¿Está reglamentado?<label> <br>
+                        <input type="radio" onclick="javascript:yesnoCheck3();" value="true" name="{{form.Esta_reglamentado_mecanismos.name}}" id="yesCheck3"  required="true"/>Si<br>
+                        <input type="radio" onclick="javascript:yesnoCheck3();" value="false" name="{{form.Esta_reglamentado_mecanismos.name}}"  id="noCheck3" checked="checked" required="true"/>No<br>
+                             <div id="ifYes3" style="visibility:hidden">
+                                 <label>Haga un breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</label><br>
+                                 <textarea type="text" name="{{form.Descripcion_mecanismos.name}}" onclick="IsEmpty();" ></textarea> <br>
+                            </div>
+
+                            <label>¿El grupo colegiado realiza evaluacion del profesorado?.</label><br>
+                            <input type="radio" onclick="javascript:yesnoCheck4();" value="true" name="{{form.Grupo_colegiado.name}}" id="yesCheck4"   required="true"/>Si<br>
+                            <input type="radio" onclick="javascript:yesnoCheck4();" value="false" name="{{form.Grupo_colegiado.name}}"  id="noCheck4"  checked="checked" required="true"/>No<br>
+                            <div id="ifYes4" style="visibility:hidden">
+                                <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
+                                 <textarea type="text" name="{{form.Descripcion_gruposColegiados.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                            </div>
+                            <label>¿Los estudiantes realizan evaluacion del profesorado?.</label><br>
+                            <input type="radio" onclick="javascript:yesnoCheck5();" value="true" name="{{form.Estudiantes.name}}" id="yesCheck5"   required="true"/>Si<br>
+                            <input type="radio" onclick="javascript:yesnoCheck5();" value="false" name="{{form.Estudiantes.name}}"  id="noCheck5"  checked="checked" required="true"/>No<br>
+                            <div id="ifYes5" style="visibility:hidden">
+                                <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
+                                 <textarea type="text" name="{{form.Descripcion_estudiantes.name}}" onclick="IsEmpty();" ></textarea> <br>
+                            </div>
+                            <label>¿Hay otras instancias que realicen evaluacion del profesorado?.</label><br>
+                            <input type="radio" onclick="javascript:yesnoCheck6();" value="true" name="{{form.Otras_instancias.name}}" id="yesCheck6"   required="true"/>Si<br>
+                            <input type="radio" onclick="javascript:yesnoCheck6();" value="false" name="{{form.Otras_instancias.name}}"  id="noCheck6"  checked="checked" required="true"/>No<br>
+                            <div id="ifYes6" style="visibility:hidden">
+                                <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
+                                 <textarea type="text" name="{{form.Descripcion_instancias.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                            </div>
+
+                            <label>¿Se lleva a cabo difusión de los resultados del proceso?</label><br>
+                            <input type="radio" onclick="javascript:yesnoCheck7();" value="true" name="{{form.Hay_difusion.name}}" id="yesCheck7"  required="true"/>Si<br>
+                            <input type="radio" onclick="javascript:yesnoCheck7();" value="false" name="{{form.Hay_difusion.name}}"  id="noCheck7" checked="checked" required="true"/>No<br>
+                            <div id="ifYes7" style="visibility:hidden">
+                                <label>Describa el tipo de difusión que se le da.</label><br>
+                                <textarea type="text" name="{{form.Tipo_difusion.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                            </div>
+
+                            <label>Indique para qué se utiliza la información de la evaluación, si se entregan resultados a los profesores, y qué acciones se toman como consecuencia de los resultados de las evaluaciones.</label><br>
+                            <textarea type="text" name="{{form.Descripcion_entrega.name}}" onclick="IsEmpty();" ></textarea> <br>
+
+                            <label>¿Están especificados los criterios académicos que valoran la productividad y la eficiencia del desempeño académico de los profesores?</label><br>
+                            <input type="radio" onclick="javascript:yesnoCheck8();" value="true" name="{{form.Hay_criterios.name}}" id="yesCheck8"  required="true"/>Si<br>
+                            <input type="radio" onclick="javascript:yesnoCheck8();" value="false" name="{{form.Hay_criterios.name}}" id="noCheck8" checked="checked" required="true"/>No<br>
+
+                            <div id="ifYes8" style="visibility:hidden">
+                                <label>Resuma los criterios principales</label><br>
+                                 <textarea type="text" name="{{form.Criterios_principales.name}}" onclick="IsEmpty();" ></textarea> <br>
+                            </div>
+                            <label>¿Existe un programa de estímulos o incentivos para los profesores que cubren dichos criterios?</label><br>
+                            <input type="radio"  value="true" name="{{form.Hay_programa_estimulos.name}}" checked="checked"  required="true"/>Si<br>
+                            <input type="radio" value="false" name="{{form.Hay_programa_estimulos.name}}" checked="checked"  required="true"/>No<br>
+
+                    </div>
+            </div>
+
+        </fieldset>
+        <button type="submit"  name="Enviar">Enviar</button>
+    </form>
+
+</body>
+</html>

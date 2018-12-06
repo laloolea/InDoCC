@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Limpiar Evaluacion</title>
+</head>
+<body>
+
+    <h1>Limpiar EVALUACION</h1>
+    <form action="" method="post" id ="Evaluacion">
+        {% csrf_token %}
+        <fieldset disabled id="fieldsetForm">
+
+            <label>¿Los estudiantes realizan evaluaciones?</label><br>
+            {% if evaluacion.Hay_evaluacion_estudiantes %}
+                <input type="radio" name="{{form.Hay_evaluacion_estudiantes.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Hay_evaluacion_estudiantes.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_evaluacion_estudiantes.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_evaluacion_estudiantes.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+            <label>Describa la manera de como se divulgan los resultados de las evaluaciones y las acciones que se toman para mejorarlas:</label><br>
+            <textarea name="Descripcion_evaluacion_estudiantes" form="evaluacion">{{evaluacion.Descripcion_evaluacion_estudiantes}}</textarea><br>
+
+            <label>¿Existen mecanismos de evaluación del desempeño docente y de investigación del profesorado?</label><br>
+            {% if evaluacion.Hay_mecanismos_evaluacion %}
+                <input type="radio" name="{{form.Hay_mecanismos_evaluacion.name}}" value="true" required="true" checked="true"> Si
+                <input type="radio" name="{{form.Hay_mecanismos_evaluacion.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_mecanismos_evaluacion.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_mecanismos_evaluacion.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+            <label>¿Está reglamentado?<label> <br>
+            {% if evaluacion.Esta_reglamentado_mecanismos %}
+                <input type="radio" name="{{form.Esta_reglamentado_mecanismos.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Esta_reglamentado_mecanismos.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Esta_reglamentado_mecanismos.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Esta_reglamentado_mecanismos.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+             <label>Haga un breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</label><br>
+             <textarea name="Descripcion_mecanismos" form="evaluacion">{{evaluacion.Descripcion_mecanismos}}</textarea><br>
+
+             <label>¿El grupo colegiado realiza evaluacion del profesorado?.</label><br>
+             {% if evaluacion.Grupo_colegiado %}
+                <input type="radio" name="{{form.Grupo_colegiado.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Grupo_colegiado.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Grupo_colegiado.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Grupo_colegiado.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+             <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
+
+             <textarea name="Descripcion_gruposColegiados" form="evaluacion">{{evaluacion.Descripcion_gruposColegiados}}</textarea><br>
+             <label>¿Los estudiantes realizan evaluacion del profesorado?.</label><br>
+             {% if evaluacion.Estudiantes %}
+                <input type="radio" name="{{form.Estudiantes.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Estudiantes.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Estudiantes.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Estudiantes.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+             <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
+             <textarea name="Descripcion_estudiantes" form="evaluacion">{{evaluacion.Descripcion_estudiantes}}</textarea><br>
+
+             <label>¿Hay otras instancias que realicen evaluacion del profesorado?.</label><br>
+             {% if evaluacion.Otras_instancias %}
+                <input type="radio" name="{{form.Otras_instancias.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Otras_instancias.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Otras_instancias.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Otras_instancias.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+             <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
+
+             <textarea name="Descripcion_instancias" form="evaluacion">{{evaluacion.Descripcion_instancias}}</textarea><br>
+             <label>¿Se lleva a cabo difusión de los resultados del proceso?</label><br>
+             {% if evaluacion.Hay_difusion %}
+                <input type="radio" name="{{form.Hay_difusion.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Hay_difusion.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_difusion.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_difusion.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+             <label>Describa el tipo de difusión que se le da.</label><br>
+             <textarea name="Tipo_difusion" form="evaluacion">{{evaluacion.Tipo_difusion}}</textarea><br>
+
+             <label>Indique para qué se utiliza la información de la evaluación, si se entregan resultados a los profesores, y qué acciones se toman como consecuencia de los resultados de las evaluaciones.</label><br>
+             <textarea name="Descripcion_entrega" form="evaluacion">{{evaluacion.Descripcion_entrega}}</textarea><br>
+
+                 <label>¿Están especificados los criterios académicos que valoran la productividad y la eficiencia del desempeño académico de los profesores?</label><br>
+            {% if evaluacion.Hay_criterios %}
+                <input type="radio" name="{{form.Hay_criterios.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Hay_criterios.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_criterios.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_criterios.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+             <label>Resuma los criterios principales</label><br>
+             <textarea name="Criterios_principales" form="evaluacion">{{evaluacion.Criterios_principales}}</textarea><br>
+
+              <label>¿Existe un programa de estímulos o incentivos para los profesores que cubren dichos criterios?</label><br>
+             {% if evaluacion.Hay_programa_estimulos %}
+                <input type="radio" name="{{form.Hay_programa_estimulos.name}}" value="true" required="true" checked="true"> Si<br>
+                <input type="radio" name="{{form.Hay_programa_estimulos.name}}" value="false" required="true"> No<br>
+            {% else %}
+                <input type="radio" name="{{form.Hay_programa_estimulos.name}}" value="true"  required="true"> Si<br>
+                <input type="radio" name="{{form.Hay_programa_estimulos.name}}" value="false" required="true" checked="true"> No<br>
+            {% endif %}
+
+        </fieldset>
+        <button type="submit" id="clean" name="_method" value="delete"> Limpiar</a></button> <br>
+        <button><a href="Agregar" > Volver</a></button>
+    </form>
+
+</body>
+</html>

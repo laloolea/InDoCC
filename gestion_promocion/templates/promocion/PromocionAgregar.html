@@ -9,8 +9,10 @@
         function yesnoCheck() {
             if (document.getElementById('yesCheck').checked) {
                 document.getElementById('ifYes').style.visibility = 'visible';
+
             } else {
                 document.getElementById('ifYes').style.visibility = 'hidden';
+                document.getElementById('ifYes').required =false
             }
         }
 
@@ -19,13 +21,16 @@
                 document.getElementById('ifYes2').style.visibility = 'visible';
             } else {
                 document.getElementById('ifYes2').style.visibility = 'hidden';
+                document.getElementById('ifYes2').required =false
             }
         }
         function yesnoCheck3() {
             if (document.getElementById('yesCheck3').checked) {
                 document.getElementById('ifYes3').style.visibility = 'visible';
+
             } else {
                 document.getElementById('ifYes3').style.visibility = 'hidden';
+                document.getElementById('ifYes3').required =false
             }
         }
         function IsEmpty(){
@@ -53,14 +58,14 @@
                 <input type="radio" onclick="javascript:yesnoCheck2();" value="false" name="{{form.Hay_reglamento_proceso.name}}" checked="checked" id="noCheck2" required="false"/>No
                 <div id="ifYes2" style="visibility:hidden">
                     <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.<label> <br>
-                    <textarea type="text" name="{{form.Descripcion.name}}" onclick="IsEmpty();" required="true" ></textarea> <br>
+                    <textarea type="text" name="{{form.Descripcion.name}}" onclick="IsEmpty();"  ></textarea> <br>
 
                      <label>¿Se lleva a cabo difusión de los resultados del proceso?</label>
                      <input type="radio" onclick="javascript:yesnoCheck3();" value="true"name="{{form.Hay_difusion_proceso.name}}" id="yesCheck3" required="true"/>Si
                      <input type="radio" onclick="javascript:yesnoCheck3();" value="false"name="{{form.Hay_difusion_proceso.name}}" checked="checked" id="noCheck3" required="false"/>No
                      <div id="ifYes3" style="visibility:hidden">
                          Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen. <br>
-                        <textarea type="text" name="{{form.DescripcionDifusion.name}}" onclick="IsEmpty();"   required="true"> </textarea> <br>
+                        <textarea type="text" name="{{form.DescripcionDifusion.name}}" onclick="IsEmpty();"> </textarea> <br>
                      </div>
                 </div>
             </div>
