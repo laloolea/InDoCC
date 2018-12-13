@@ -8,3 +8,7 @@ class Promocion(models.Model):
     Descripcion = models.TextField(default="", blank=True, null=True)
     Hay_difusion_proceso = models.BooleanField(default=False)
     DescripcionDifusion = models.TextField(default="", blank=True, null=True)
+    Evidencia = models.FileField(upload_to="evidencias/",null=True,blank=True)
+
+
+

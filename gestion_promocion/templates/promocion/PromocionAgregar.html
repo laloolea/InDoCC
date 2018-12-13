@@ -44,7 +44,7 @@
 
     </script>
     <h1>PROMOCION</h1>
-    <form action="/promocion/Agregar" method="post" id ="Promocion">
+    <form action="/promocion/Agregar" method="post" id ="Promocion" enctype="multipart/form-data">
 
         <fieldset>
             {% csrf_token %}
@@ -66,6 +66,9 @@
                      <div id="ifYes3" style="visibility:hidden">
                          Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen. <br>
                         <textarea type="text" name="{{form.DescripcionDifusion.name}}" onclick="IsEmpty();"> </textarea> <br>
+
+                         <label>Subir resultados de los últimos 3 años</label> <br>
+                         <input type="file" name="evidencia" accept="image/*,.pdf " id="file">
                      </div>
                 </div>
             </div>

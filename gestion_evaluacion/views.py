@@ -24,12 +24,16 @@ class EvaluacionAdd(TemplateView):
             obj.Descripcion_mecanismos = form.cleaned_data['Descripcion_mecanismos']
             obj.Grupo_colegiado = form.cleaned_data['Grupo_colegiado']
             obj.Descripcion_gruposColegiados = form.cleaned_data['Descripcion_gruposColegiados']
+            obj.Evidencia_grupoColegiados = request.FILES['Evidencia_grupoColegiados']
             obj.Estudiantes = form.cleaned_data['Estudiantes']
             obj.Descripcion_estudiantes = form.cleaned_data['Descripcion_estudiantes']
+            obj.Evidencia_estudiante = request.FILES['Evidencia_estudiante']
             obj.Otras_instancias = form.cleaned_data['Otras_instancias']
             obj.Descripcion_instancias = form.cleaned_data['Descripcion_instancias']
+            obj.Evidencia_instancias = request.FILES['Evidencia_instancias']
             obj.Hay_difusion = form.cleaned_data['Hay_difusion']
             obj.Tipo_difusion = form.cleaned_data['Tipo_difusion']
+            obj.Resultados_periodos = request.FILES['Resultados_periodos']
             obj.Descripcion_entrega = form.cleaned_data['Descripcion_entrega']
             obj.Hay_criterios = form.cleaned_data['Hay_criterios']
             obj.Criterios_principales = form.cleaned_data['Criterios_principales']
@@ -64,12 +68,16 @@ class EvaluacionViewUpdate(TemplateView):
             obj.Descripcion_mecanismos = form.cleaned_data['Descripcion_mecanismos']
             obj.Grupo_colegiado = form.cleaned_data['Grupo_colegiado']
             obj.Descripcion_gruposColegiados = form.cleaned_data['Descripcion_gruposColegiados']
+            obj.Evidencia_grupoColegiados = request.FILES['Evidencia_grupoColegiados']
             obj.Estudiantes = form.cleaned_data['Estudiantes']
             obj.Descripcion_estudiantes = form.cleaned_data['Descripcion_estudiantes']
+            obj.Evidencia_estudiante = request.FILES['Evidencia_estudiante']
             obj.Otras_instancias = form.cleaned_data['Otras_instancias']
             obj.Descripcion_instancias = form.cleaned_data['Descripcion_instancias']
+            obj.Evidencia_instancias = request.FILES['Evidencia_instancias']
             obj.Hay_difusion = form.cleaned_data['Hay_difusion']
             obj.Tipo_difusion = form.cleaned_data['Tipo_difusion']
+            obj.Resultados_periodos = request.FILES['Resultados_periodos']
             obj.Descripcion_entrega = form.cleaned_data['Descripcion_entrega']
             obj.Hay_criterios = form.cleaned_data['Hay_criterios']
             obj.Criterios_principales = form.cleaned_data['Criterios_principales']
@@ -101,12 +109,16 @@ class EvaluacionClean(TemplateView):
         obj.Descripcion_mecanismos = ' '
         obj.Grupo_colegiado = False
         obj.Descripcion_gruposColegiados = ' '
+        obj.Evidencia_grupoColegiados.delete()
         obj.Estudiantes = False
         obj.Descripcion_estudiantes = ' '
+        obj.Evidencia_estudiante.delete()
         obj.Otras_instancias = False
         obj.Descripcion_instancias = ' '
+        obj.Evidencia_instancias.delete()
         obj.Hay_difusion = False
         obj.Tipo_difusion = ' '
+        obj.Resultados_periodos.delete()
         obj.Descripcion_entrega = ' '
         obj.Hay_criterios = False
         obj.Criterios_principales = ' '

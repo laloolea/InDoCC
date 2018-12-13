@@ -3,6 +3,7 @@ from .models import Promocion
 from django.views.generic import TemplateView
 from gestion_promocion.forms import PromocionForm
 import gestion_promocion.models
+
 # Create your views here.
 
 class PromocionAdd(TemplateView):
@@ -21,11 +22,13 @@ class PromocionAdd(TemplateView):
             obj.Descripcion = form.cleaned_data['Descripcion']
             obj.Hay_difusion_proceso = form.cleaned_data['Hay_difusion_proceso']
             obj.DescripcionDifusion = form.cleaned_data['DescripcionDifusion']
+            obj.Evidencia = request.FILES['evidencia']
             obj.save()
+
             return render(request, 'promocion/PromocionAgregar.html', {'form': form},)
         else:
             form = PromocionForm()
-        return render(request, 'PromocionAgregar.html', {'form': form})
+        return render(request,'promocion/PromocionAgregar.html', {'form': form})
 
 
 class PromocionViewUpdate(TemplateView):
@@ -46,6 +49,7 @@ class PromocionViewUpdate(TemplateView):
             obj.Descripcion = form.cleaned_data['Descripcion']
             obj.Hay_difusion_proceso = form.cleaned_data['Hay_difusion_proceso']
             obj.DescripcionDifusion = form.cleaned_data['DescripcionDifusion']
+            obj.Evidencia = request.FILES['evidencia']
             obj.save()
             return render(request, self.template_name)
         else:
@@ -68,6 +72,7 @@ class PromocionClean(TemplateView):
         obj.Descripcion = ' '
         obj.Hay_difusion_proceso = False
         obj.DescripcionDifusion = ' '
+        obj.Evidencia.delete()
         obj.save()
         return render(request, self.template_name, {'obj': obj})
         #return render(request, 'PromocionAgregar.html', {'form': form})

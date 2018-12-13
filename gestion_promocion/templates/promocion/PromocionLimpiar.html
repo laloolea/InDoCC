@@ -44,7 +44,11 @@
 
              <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</label> <br>
              <textarea name="DescripcionDifusion" form="promocion">{{promocion.DescripcionDifusion}}</textarea><br>
-
+            {% if promocion.Evidencia.name %}
+                    <output id="fileOut">Evidencia Archivada: {{ promocion.Evidencia }}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+            {% endif %}
 
         </fieldset>
         <button type="submit" id="clean" name="_method" value="delete"> Limpiar</a></button> <br>

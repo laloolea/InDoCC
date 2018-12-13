@@ -91,7 +91,7 @@
 
     </script>
     <h1>Evaluacion</h1>
-    <form action="/evaluacion/Agregar" method="post" id ="Evaluacion">
+    <form action="/evaluacion/Agregar" method="post" id ="Evaluacion" enctype="multipart/form-data">
 
         <fieldset>
             {% csrf_token %}
@@ -120,6 +120,8 @@
                             <div id="ifYes4" style="visibility:hidden">
                                 <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
                                  <textarea type="text" name="{{form.Descripcion_gruposColegiados.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                                <label>Anexar información relativa al proceso</label> <br>
+                                <input type="file" name="Evidencia_grupoColegiados" accept="image/*,.pdf " id="file">
                             </div>
                             <label>¿Los estudiantes realizan evaluacion del profesorado?.</label><br>
                             <input type="radio" onclick="javascript:yesnoCheck5();" value="true" name="{{form.Estudiantes.name}}" id="yesCheck5"   required="true"/>Si<br>
@@ -127,6 +129,8 @@
                             <div id="ifYes5" style="visibility:hidden">
                                 <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
                                  <textarea type="text" name="{{form.Descripcion_estudiantes.name}}" onclick="IsEmpty();" ></textarea> <br>
+                                <label>Anexar información relativa al proceso</label> <br>
+                                <input type="file" name="Evidencia_estudiante" accept="image/*,.pdf " id="file">
                             </div>
                             <label>¿Hay otras instancias que realicen evaluacion del profesorado?.</label><br>
                             <input type="radio" onclick="javascript:yesnoCheck6();" value="true" name="{{form.Otras_instancias.name}}" id="yesCheck6"   required="true"/>Si<br>
@@ -134,6 +138,8 @@
                             <div id="ifYes6" style="visibility:hidden">
                                 <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
                                  <textarea type="text" name="{{form.Descripcion_instancias.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                                <label>Anexar información relativa al proceso</label> <br>
+                                <input type="file" name="Evidencia_instancias" accept="image/*,.pdf " id="file">
                             </div>
 
                             <label>¿Se lleva a cabo difusión de los resultados del proceso?</label><br>
@@ -142,6 +148,8 @@
                             <div id="ifYes7" style="visibility:hidden">
                                 <label>Describa el tipo de difusión que se le da.</label><br>
                                 <textarea type="text" name="{{form.Tipo_difusion.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                                <label>Proporcione los resultados de los últimos tres períodos escolares</label> <br>
+                                <input type="file" name="Resultados_periodos" accept="image/*,.pdf " id="file">
                             </div>
 
                             <label>Indique para qué se utiliza la información de la evaluación, si se entregan resultados a los profesores, y qué acciones se toman como consecuencia de los resultados de las evaluaciones.</label><br>

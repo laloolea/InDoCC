@@ -12,11 +12,50 @@
             document.getElementById('editB').hidden = true;
             document.getElementById('submit').hidden = false;
 		}
-
+        function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.display = 'block';
+                document.getElementById('textarea').required = true;
+            } else if (document.getElementById('noCheck').checked) {
+                document.getElementById('ifYes').style.display = 'none';
+                document.getElementById('textarea').value = '';
+                document.getElementById('textarea').required = false;
+            }
+        }
+        function yesnoCheck2() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes2').style.display = 'block';
+                document.getElementById('textarea').required = true;
+            } else if (document.getElementById('noCheck').checked) {
+                document.getElementById('ifYes2').style.display = 'none';
+                document.getElementById('textarea').value = '';
+                document.getElementById('textarea').required = false;
+            }
+        }
+        function yesnoCheck3() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes3').style.display = 'block';
+                document.getElementById('textarea').required = true;
+            } else if (document.getElementById('noCheck').checked) {
+                document.getElementById('ifYes3').style.display = 'none';
+                document.getElementById('textarea').value = '';
+                document.getElementById('textarea').required = false;
+            }
+        }
+        function yesnoCheck4() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes4').style.display = 'block';
+                document.getElementById('textarea').required = true;
+            } else if (document.getElementById('noCheck').checked) {
+                document.getElementById('ifYes4').style.display = 'none';
+                document.getElementById('textarea').value = '';
+                document.getElementById('textarea').required = false;
+            }
+        }
 	</script>
 
     <h1>Ver/Editar Evaluacion</h1>
-    <form action="Agregar" method="post" id ="evaluacion">
+    <form action="Agregar" method="post" id ="evaluacion" enctype="multipart/form-data">
         {% csrf_token %}
 
         <fieldset disabled id="fieldsetForm">
@@ -63,8 +102,19 @@
                 <input type="radio" name="{{form.Grupo_colegiado.name}}" value="false" required="true" checked="true"> No<br>
             {% endif %}
              <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
-
              <textarea name="Descripcion_gruposColegiados" form="evaluacion">{{evaluacion.Descripcion_gruposColegiados}}</textarea><br>
+
+            {% if evaluacion.Evidencia_grupoColegiados.name %}
+                    <output id="fileOut">Evidencia Archivada: {{evaluacion.Evidencia_grupoColegiados}}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+             {% endif %}
+
+             <div id="ifYes" >
+                 <label>Anexar información relativa al proceso</label><br>
+                 <input type="file" name="Evidencia_grupoColegiados" accept="image/*,.pdf " id="file">
+             </div>
+
              <label>¿Los estudiantes realizan evaluacion del profesorado?.</label><br>
              {% if evaluacion.Estudiantes %}
                 <input type="radio" name="{{form.Estudiantes.name}}" value="true" required="true" checked="true"> Si<br>
@@ -77,6 +127,17 @@
              <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
              <textarea name="Descripcion_estudiantes" form="evaluacion">{{evaluacion.Descripcion_estudiantes}}</textarea><br>
 
+            {% if evaluacion.Evidencia_estudiante.name %}
+                    <output id="fileOut">Evidencia Archivada: {{evaluacion.Evidencia_estudiante}}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+             {% endif %}
+
+             <div id="ifYes2" >
+                 <label>Anexar información relativa al proceso</label><br>
+                 <input type="file" name="Evidencia_estudiante" accept="image/*,.pdf " id="file">
+             </div>
+
              <label>¿Hay otras instancias que realicen evaluacion del profesorado?.</label><br>
              {% if evaluacion.Otras_instancias %}
                 <input type="radio" name="{{form.Otras_instancias.name}}" value="true" required="true" checked="true"> Si<br>
@@ -86,8 +147,18 @@
                 <input type="radio" name="{{form.Otras_instancias.name}}" value="false" required="true" checked="true"> No<br>
             {% endif %}
              <label>Señale de forma abreviada, la forma y periodicidad en que se realizan.</label><br>
-
              <textarea name="Descripcion_instancias" form="evaluacion">{{evaluacion.Descripcion_instancias}}</textarea><br>
+
+            {% if evaluacion.Evidencia_instancias.name %}
+                    <output id="fileOut">Evidencia Archivada: {{evaluacion.Evidencia_instancias}}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+             {% endif %}
+
+             <div id="ifYes3" >
+                 <label>Anexar información relativa al proceso</label><br>
+                 <input type="file" name="Evidencia_instancias" accept="image/*,.pdf " id="file">
+             </div>
              <label>¿Se lleva a cabo difusión de los resultados del proceso?</label><br>
              {% if evaluacion.Hay_difusion %}
                 <input type="radio" name="{{form.Hay_difusion.name}}" value="true" required="true" checked="true"> Si<br>
@@ -99,6 +170,17 @@
 
              <label>Describa el tipo de difusión que se le da.</label><br>
              <textarea name="Tipo_difusion" form="evaluacion">{{evaluacion.Tipo_difusion}}</textarea><br>
+
+            {% if evaluacion.Resultados_periodos.name %}
+                    <output id="fileOut">Evidencia Archivada: {{evaluacion.Resultados_periodos}}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+             {% endif %}
+
+             <div id="ifYes4" >
+                 <label>Proporcione los resultados de los últimos tres períodos escolares </label><br>
+                 <input type="file" name="Resultados_periodos" accept="image/*,.pdf " id="file">
+             </div>
 
              <label>Indique para qué se utiliza la información de la evaluación, si se entregan resultados a los profesores, y qué acciones se toman como consecuencia de los resultados de las evaluaciones.</label><br>
              <textarea name="Descripcion_entrega" form="evaluacion">{{evaluacion.Descripcion_entrega}}</textarea><br>

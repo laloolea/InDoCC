@@ -17,10 +17,20 @@
 
             return;
         }
+        function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.display = 'block';
+                document.getElementById('textarea').required = true;
+            } else if (document.getElementById('noCheck').checked) {
+                document.getElementById('ifYes').style.display = 'none';
+                document.getElementById('textarea').value = '';
+                document.getElementById('textarea').required = false;
+            }
+        }
 	</script>
 
     <h1>Ver/Editar Promoción</h1>
-    <form action="Agregar" method="post" id ="promocion">
+    <form action="Agregar" method="post" enctype="multipart/form-data" id ="promocion">
         {% csrf_token %}"
 
         <fieldset disabled id="fieldsetForm">
@@ -59,6 +69,16 @@
              <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</label> <br>
              <textarea name="DescripcionDifusion" form="promocion">{{promocion.DescripcionDifusion}}</textarea><br>
 
+             {% if promocion.Evidencia.name %}
+                    <output id="fileOut">Evidencia Archivada: {{promocion.Evidencia}}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+             {% endif %}
+
+             <div id="ifYes" >
+                 <label>Subir resultados de los últimos 3 años</label><br>
+                 <input type="file" name="evidencia" accept="image/*,.pdf " id="file">
+             </div>
         </fieldset>
         <button type="submit" onclick="mensaje();" name="Enviar" id="submit" hidden>Enviar</button>
     </form>
