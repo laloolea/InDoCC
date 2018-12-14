@@ -90,19 +90,19 @@
             }
 
     </script>
-    <h1>Evaluacion</h1>
+    <h1>1.7 Evaluacion</h1>
     <form action="/evaluacion/Agregar" method="post" id ="Evaluacion" enctype="multipart/form-data">
 
         <fieldset>
             {% csrf_token %}
 
-            <label>¿Los estudiantes realizan evaluaciones?</label><br>
+            <label>1.7.1¿Los estudiantes realizan evaluaciones?</label><br>
             <input type="radio" onclick="javascript:yesnoCheck();" value="true" name="{{form.Hay_evaluacion_estudiantes.name}}" id="yesCheck"  required="true"/>Si<br>
             <input type="radio" onclick="javascript:yesnoCheck();" value="false" name="{{form.Hay_evaluacion_estudiantes.name}}"  id="noCheck" checked="checked" required="true"/>No
             <div id="ifYes" style="visibility:hidden">
                 <label>Describa la manera de como se divulgan los resultados de las evaluaciones y las acciones que se toman para mejorarlas:</label><br>
                 <textarea type="text" id="descripcion" name="{{form.Descripcion_evaluacion_estudiantes.name}}" onclick="IsEmpty();" ></textarea> <br>
-                <label>¿Existen mecanismos de evaluación del desempeño docente y de investigación del profesorado?</label><br>
+                <label>1.7.2¿Existen mecanismos de evaluación del desempeño docente y de investigación del profesorado?</label><br>
                 <input type="radio" onclick="javascript:yesnoCheck2();" value="true" name="{{form.Hay_mecanismos_evaluacion.name}}" id="yesCheck2"  required="true"/>Si<br>
                 <input type="radio" onclick="javascript:yesnoCheck2();" value="false" name="{{form.Hay_mecanismos_evaluacion.name}}"  id="noCheck2" checked="checked" required="true"/>No<br>
                     <div id="ifYes2" style="visibility:hidden">
@@ -114,7 +114,7 @@
                                  <textarea type="text" name="{{form.Descripcion_mecanismos.name}}" onclick="IsEmpty();" ></textarea> <br>
                             </div>
 
-                            <label>¿El grupo colegiado realiza evaluacion del profesorado?.</label><br>
+                            <label>1.7.3¿El grupo colegiado realiza evaluacion del profesorado?.</label><br>
                             <input type="radio" onclick="javascript:yesnoCheck4();" value="true" name="{{form.Grupo_colegiado.name}}" id="yesCheck4"   required="true"/>Si<br>
                             <input type="radio" onclick="javascript:yesnoCheck4();" value="false" name="{{form.Grupo_colegiado.name}}"  id="noCheck4"  checked="checked" required="true"/>No<br>
                             <div id="ifYes4" style="visibility:hidden">
@@ -155,7 +155,7 @@
                             <label>Indique para qué se utiliza la información de la evaluación, si se entregan resultados a los profesores, y qué acciones se toman como consecuencia de los resultados de las evaluaciones.</label><br>
                             <textarea type="text" name="{{form.Descripcion_entrega.name}}" onclick="IsEmpty();" ></textarea> <br>
 
-                            <label>¿Están especificados los criterios académicos que valoran la productividad y la eficiencia del desempeño académico de los profesores?</label><br>
+                            <label>1.7.4¿Están especificados los criterios académicos que valoran la productividad y la eficiencia del desempeño académico de los profesores?</label><br>
                             <input type="radio" onclick="javascript:yesnoCheck8();" value="true" name="{{form.Hay_criterios.name}}" id="yesCheck8"  required="true"/>Si<br>
                             <input type="radio" onclick="javascript:yesnoCheck8();" value="false" name="{{form.Hay_criterios.name}}" id="noCheck8" checked="checked" required="true"/>No<br>
 
