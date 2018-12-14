@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcfcaef9-ad3d-41f7-bcaa-b5806dd1ed47" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gestion_salarios/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosAgregar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosLimpiar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosVerEditar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestion_salarios/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InDoCC/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/InDoCC/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InDoCC/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/InDoCC/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_salarios/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_salarios/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_salarios/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_salarios/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_salarios/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_salarios/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,21 +27,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_promocion/models.py">
+        <entry file="file://$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosLimpiar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="78" />
+            <state relative-caret-position="210">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_promocion/views.py">
+        <entry file="file://$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosAgregar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="151" column="76" selection-start-line="151" selection-start-column="76" selection-end-line="151" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,36 +93,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="93" column="99" selection-start-line="93" selection-start-column="99" selection-end-line="93" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="120" column="31" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="70" column="94" selection-start-line="69" selection-start-column="25" selection-end-line="70" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
@@ -97,29 +101,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="58" column="100" selection-start-line="58" selection-start-column="100" selection-end-line="58" selection-end-column="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="13" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html">
+        <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="50" selection-end-column="23" />
+            <state relative-caret-position="155">
+              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="64" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#label#0;n#label#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,15 +144,17 @@
       <find>estrate</find>
       <find>clean</find>
       <find>on</find>
-      <find>promocio</find>
-      <find>promo</find>
       <find>grupoColegiados</find>
-      <find>promocion</find>
       <find>enctype=&quot;multipart/form-data&quot;</find>
       <find>Evidencia_estudiante</find>
       <find>Evidencia_estudiantes</find>
       <find>evidencia_estudiante</find>
       <find>evidencia_estudiantes</find>
+      <find>promocion</find>
+      <find>promoci</find>
+      <find>promocio</find>
+      <find>promo</find>
+      <find>salariosAgregar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,23 +171,32 @@
         <option value="$PROJECT_DIR$/gestion_promocion/templates/promocion/promocion.html" />
         <option value="$PROJECT_DIR$/gestion_promocion/form.py" />
         <option value="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionEditar.html" />
-        <option value="$PROJECT_DIR$/gestion_promocion/urls.py" />
-        <option value="$PROJECT_DIR$/InDoCC/urls.py" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/admin.py" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/forms.py" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/urls.py" />
         <option value="$PROJECT_DIR$/gestion_promocion/forms.py" />
         <option value="$PROJECT_DIR$/InDoCC/settings.py" />
-        <option value="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html" />
         <option value="$PROJECT_DIR$/gestion_promocion/models.py" />
         <option value="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html" />
         <option value="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/models.py" />
-        <option value="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html" />
         <option value="$PROJECT_DIR$/gestion_promocion/views.py" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/views.py" />
         <option value="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html" />
+        <option value="$PROJECT_DIR$/gestion_salarios/models.py" />
+        <option value="$PROJECT_DIR$/InDoCC/urls.py" />
+        <option value="$PROJECT_DIR$/gestion_salarios/admin.py" />
+        <option value="$PROJECT_DIR$/gestion_salarios/migrations/salarios/SalariosAgregar.html" />
+        <option value="$PROJECT_DIR$/gestion_salarios/forms.py" />
+        <option value="$PROJECT_DIR$/gestion_promocion/urls.py" />
+        <option value="$PROJECT_DIR$/gestion_salarios/views.py" />
+        <option value="$PROJECT_DIR$/gestion_salarios/urls.py" />
+        <option value="$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosVerEditar.html" />
+        <option value="$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosLimpiar.html" />
+        <option value="$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosAgregar.html" />
+        <option value="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html" />
+        <option value="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html" />
       </list>
     </option>
   </component>
@@ -246,6 +256,29 @@
             <path>
               <item name="InDoCC" type="b2602c69:ProjectViewProjectNode" />
               <item name="InDoCC" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_salarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InDoCC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InDoCC" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_salarios" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InDoCC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InDoCC" type="462c0819:PsiDirectoryNode" />
+              <item name="gestion_salarios" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="salarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InDoCC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InDoCC" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InDoCC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InDoCC" type="462c0819:PsiDirectoryNode" />
               <item name="InDoCC" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -261,6 +294,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gestion_salarios/templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,12 +353,12 @@
       <workItem from="1543877897162" duration="358000" />
       <workItem from="1543878347825" duration="5723000" />
       <workItem from="1543940353149" duration="26429000" />
-      <workItem from="1544722362631" duration="5444000" />
+      <workItem from="1544722362631" duration="9016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49199000" />
+    <option name="totallyTimeSpent" value="52771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="909" extended-state="0" />
@@ -353,45 +391,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/post_base.html" />
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/post_edit.html" />
-    <entry file="file://$PROJECT_DIR$/gestion_docentes/templates/gestion_docentes/detail.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_docentes/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_docentes/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_docentes/templates/gestion_docentes/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_docentes/templates/gestion_docentes/docente_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_salarios/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_salarios/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_docentes/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InDoCC/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///anaconda3/lib/python3.6/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2976">
@@ -451,34 +450,6 @@
     <entry file="file://$PROJECT_DIR$/GestionPromocionConfig/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InDoCC/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_evaluacion/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -502,82 +473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="18" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InDoCC/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="95" column="37" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="70" column="94" selection-start-line="69" selection-start-column="25" selection-end-line="70" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,10 +490,213 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="58" column="100" selection-start-line="58" selection-start-column="100" selection-end-line="58" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="109" column="4" selection-start-line="109" selection-start-column="4" selection-end-line="109" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InDoCC/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosVerEditar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosLimpiar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosAgregar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="4819" column="13" selection-start-line="4819" selection-start-column="13" selection-end-line="4819" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#label#0;n#label#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -607,15 +709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="93" column="99" selection-start-line="93" selection-start-column="99" selection-end-line="93" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="58" column="100" selection-start-line="58" selection-start-column="100" selection-end-line="58" selection-end-column="100" />
+        <state relative-caret-position="467">
+          <caret line="151" column="76" selection-start-line="151" selection-start-column="76" selection-end-line="151" selection-end-column="76" />
         </state>
       </provider>
     </entry>

@@ -27,10 +27,11 @@
         function yesnoCheck3() {
             if (document.getElementById('yesCheck3').checked) {
                 document.getElementById('ifYes3').style.visibility = 'visible';
-
+                document.getElementById('file').required = true;
             } else {
                 document.getElementById('ifYes3').style.visibility = 'hidden';
-                document.getElementById('ifYes3').required =false
+                document.getElementById('file').required = false;
+                 document.getElementById('file').style.visibility = 'hidden';
             }
         }
         function IsEmpty(){

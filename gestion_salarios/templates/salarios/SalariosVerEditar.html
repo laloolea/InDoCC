@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">Ver/Editar Salarios</title>
+</head>
+<body>
+    <script>
+
+		function mensaje(){
+            alert("Información editada correctamente");
+
+            return;
+        }
+        function edit() {
+            document.getElementById('fieldsetForm').disabled = false;
+            document.getElementById('title').innerText="Ver/Editar Promocion";
+            document.getElementById('editB').hidden = true;
+            document.getElementById('submit').hidden = false;
+		}
+        function yesnoCheck() {
+            if (document.getElementById('yesCheck').checked) {
+                document.getElementById('ifYes').style.display = 'block';
+                document.getElementById('textarea').required = true;
+            } else if (document.getElementById('noCheck').checked) {
+                document.getElementById('ifYes').style.display = 'none';
+                document.getElementById('textarea').value = '';
+                document.getElementById('textarea').required = false;
+            }
+        }
+	</script>
+
+    <h1>Ver/Editar Promoción</h1>
+    <form action="Agregar" method="post" enctype="multipart/form-data" id ="salarios">
+        {% csrf_token %}
+
+        <fieldset disabled id="fieldsetForm">
+
+
+             {% if salarios.Contrato_colectivo.name %}
+                    <output id="fileOut">Evidencia Archivada: {{salarios.Contrato_colectivo}}</output>
+                {% else %}
+                    <output id="fileOut">Evidencia Archivada: Ninguna.</output>
+             {% endif %}
+
+             <div id="ifYes" >
+                 <label>Adjunte el contrato colectivo</label><br>
+                 <input type="file" name="Contrato_colectivo" accept="image/*,.pdf " id="file">
+             </div>
+        </fieldset>
+        <button type="submit" onclick="mensaje();" name="Enviar" id="submit" hidden>Enviar</button>
+    </form>
+   <button type="button" onclick="edit();" name="Editar" id="editB">Editar</button>
+</body>
+</html>
