@@ -19,29 +19,37 @@
         function yesnoCheck2() {
             if (document.getElementById('yesCheck2').checked) {
                 document.getElementById('ifYes2').style.visibility = 'visible';
+                document.getElementById('texto').required = true
+
             } else {
                 document.getElementById('ifYes2').style.visibility = 'hidden';
-                document.getElementById('ifYes2').required =false
+                document.getElementById('textarea').value = '';
+                document.getElementById('ifYes2').required = false
+                document.getElementById('texto').required = false
+
             }
         }
         function yesnoCheck3() {
             if (document.getElementById('yesCheck3').checked) {
                 document.getElementById('ifYes3').style.visibility = 'visible';
-                document.getElementById('file').required = true;
+                document.getElementById('texto2').required = true
+                document.getElementById('file').required = true
             } else {
                 document.getElementById('ifYes3').style.visibility = 'hidden';
-                document.getElementById('file').required = false;
-                 document.getElementById('file').style.visibility = 'hidden';
+                document.getElementById('textarea').value = '';
+                document.getElementById('ifYes3').required = false
+                document.getElementById('texto2').required = false
+                document.getElementById('file').required = false
             }
         }
-        function IsEmpty(){
 
-                if(document.form.question.value == "")
-                {
-                    alert("empty");
+
+        function FileEmpty(){
+             if(document.getElementById('file').file.length === 0)
+             {
+                    alert("Suba un archivo.");
                 }
-                return;
-            }
+        }
 
     </script>
     <h1>1.8 PROMOCION</h1>
@@ -59,23 +67,23 @@
                 <input type="radio" onclick="javascript:yesnoCheck2();" value="false" name="{{form.Hay_reglamento_proceso.name}}" checked="checked" id="noCheck2" required="false"/>No
                 <div id="ifYes2" style="visibility:hidden">
                     <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.<label> <br>
-                    <textarea type="text" name="{{form.Descripcion.name}}" onclick="IsEmpty();"  ></textarea> <br>
+                    <textarea type="text" id ="texto" name="{{form.Descripcion.name}}"  ></textarea> <br>
 
                      <label>¿Se lleva a cabo difusión de los resultados del proceso?</label>
-                     <input type="radio" onclick="javascript:yesnoCheck3();" value="true"name="{{form.Hay_difusion_proceso.name}}" id="yesCheck3" required="true"/>Si
-                     <input type="radio" onclick="javascript:yesnoCheck3();" value="false"name="{{form.Hay_difusion_proceso.name}}" checked="checked" id="noCheck3" required="false"/>No
+                     <input type="radio" onclick="yesnoCheck3();" value="true"name="{{form.Hay_difusion_proceso.name}}" id="yesCheck3" required="true"/>Si
+                     <input type="radio" onclick="yesnoCheck3();" value="false"name="{{form.Hay_difusion_proceso.name}}" checked="checked" id="noCheck3" required="false"/>No
                      <div id="ifYes3" style="visibility:hidden">
-                         Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen. <br>
-                        <textarea type="text" name="{{form.DescripcionDifusion.name}}" onclick="IsEmpty();"> </textarea> <br>
+                         <label>Breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.<label> <br>
+                        <textarea type="text" id ="texto2" name="{{form.DescripcionDifusion.name}}" required="true" > </textarea> <br>
 
                          <label>Subir resultados de los últimos 3 años</label> <br>
-                         <input type="file" name="evidencia" accept="image/*,.pdf " id="file">
+                         <input type="file" name="Evidencia" accept="image/*,.pdf "  id="file">
                      </div>
                 </div>
             </div>
 
         </fieldset>
-        <button type="submit" name="Enviar">Enviar</button>
+        <button type="submit"  name="Enviar">Enviar</button>
     </form>
 
 </body>

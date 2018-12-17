@@ -22,7 +22,7 @@ class PromocionAdd(TemplateView):
             obj.Descripcion = form.cleaned_data['Descripcion']
             obj.Hay_difusion_proceso = form.cleaned_data['Hay_difusion_proceso']
             obj.DescripcionDifusion = form.cleaned_data['DescripcionDifusion']
-            obj.Evidencia = request.FILES['evidencia']
+            obj.Evidencia = request.FILES.get('Evidencia', False)
             obj.save()
 
             return render(request, 'promocion/PromocionAgregar.html', {'form': form},)
@@ -49,7 +49,7 @@ class PromocionViewUpdate(TemplateView):
             obj.Descripcion = form.cleaned_data['Descripcion']
             obj.Hay_difusion_proceso = form.cleaned_data['Hay_difusion_proceso']
             obj.DescripcionDifusion = form.cleaned_data['DescripcionDifusion']
-            obj.Evidencia = request.FILES['evidencia']
+            obj.Evidencia = request.FILES.get('Evidencia', False)
             obj.save()
             return render(request, self.template_name)
         else:
