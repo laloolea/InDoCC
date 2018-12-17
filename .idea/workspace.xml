@@ -2,12 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcfcaef9-ad3d-41f7-bcaa-b5806dd1ed47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_evaluacion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_evaluacion/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionAgregar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestion_promocion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_promocion/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-11-06_at_6.50.06_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-11-08_at_7.51.09_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-11-12_at_11.40.09_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-11-12_at_11.42.46_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-05_at_3.15.22_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-05_at_7.50.23_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-05_at_7.50.23_PM_TiCuw45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-05_at_7.50.34_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-06_at_6.05.37_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-06_at_6.05.37_PM_TZPVkzR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-11_at_7.36.23_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-11_at_7.36.23_PM_VfX5uEt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-11_at_7.36.23_PM_Xl017Bl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-11_at_9.02.11_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-12_at_10.28.12_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-12_at_10.28.12_PM_0aKiupJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-12_at_10.28.12_PM_0qNS0PR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-12_at_10.28.12_PM_2Fi7LXc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-12_at_10.28.12_PM_H6qrsoj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.44_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.44_PM_A2DOgpA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM_Qu6oRiX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM_Vrf0CA2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM_fKS8BZP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM_gVkwtrF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM_jOywM0K.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.42.52_PM_p0WxJuX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_8oSb6Ke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_A1tClkf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_ApCcWnW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_H13ahEJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_KgCLWGJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_Sgfm6EN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_YOkXv88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_bQ3lGih.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.34_PM_g8SVGBJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.49_PM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.49_PM_51NOXfW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.49_PM_PVu3rF7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.49_PM_lc9AN0P.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/Screen_Shot_2018-12-16_at_11.45.49_PM_uY0HW4H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_WRtvFxb.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_WWMVbVY.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_gIGhZF9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_rlg4mNX.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_xdrjWfC.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_zFJs3Y4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/contrato_cct_staus_unison2017-2019_zf3R0Mi.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evidencias/fileId.pdf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,15 +67,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_promocion/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_salarios/templates/salarios/SalariosAgregar.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -39,15 +76,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionLimpiar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionAgregar.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="653">
@@ -63,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestion_promocion/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="124">
               <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="65" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -73,9 +101,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestion_evaluacion/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gestion_evaluacion/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="1260">
               <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -361,12 +403,12 @@
       <workItem from="1543877897162" duration="358000" />
       <workItem from="1543878347825" duration="5723000" />
       <workItem from="1543940353149" duration="26429000" />
-      <workItem from="1544722362631" duration="19224000" />
+      <workItem from="1544722362631" duration="19472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62979000" />
+    <option name="totallyTimeSpent" value="63227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="909" extended-state="0" />
@@ -460,9 +502,6 @@
           <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gestion_evaluacion/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -621,13 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestion_promocion/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -675,44 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_promocion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,6 +721,50 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#label#0;n#label#0;n#div#0;n#div#0;n#fieldset#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/templates/promocion/PromocionVerEditar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="74" column="32" lean-forward="true" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_promocion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionLimpiar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/templates/evaluacion/EvaluacionVerEditar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestion_evaluacion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
